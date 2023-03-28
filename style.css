@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./blue.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  height: 390px;
+  width: 1200px;
+  background-color: #1b2347;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.main {
+  height: 460px;
+  width: 450px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.header-part {
+  display: flex;
+  align-items: center;
+}
+
+.header-part-h1 {
+  display: flex;
+  justify-content: flex-start;
+  color: gray;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#loginform,
+.signupform {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  /* transition: 0.2s ease; */
+}
+
+
+.signupform {
+  top: 45%;
+  left: 75%;
+  display: none;
+}
+
+#loginform h1,
+.signupform h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+#loginform input,
+.signupform input {
+  height: 40px;
+  width: 300px;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid gray;
+  margin: 5px;
+}
+
+
+#loginform button,
+.signupform button {
+  height: 45px;
+  width: 130px;
+  background-color: #f89a35;
+  font-family: monospace;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+#login_btn,
+#signup_btn {
+  height: 50px;
+  width: 140px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #49abfe;
+  border-radius: 35px;
+  outline: none;
+  position: absolute;
+  left: 75%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#login_btn:hover,
+#signup_btn:hover {
+  background-color: #49abfe;
+  color: white;
+  cursor: pointer;
+}
+
+#login_msg,
+#signup_msg {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hr {
+  border-bottom: 2px solid #49abfe;
+  width: 15%;
+  margin-top: 15px;
+}
+
+.hr-1 {
+  margin-top: 20px;
+  border-bottom: 2px solid #49abfe;
+  width: 15%;
+}
+
+
+#signup_msg h1 {
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#signup_msg p {
+  width: 250;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#signup_msg {
+  left: 25%;
+  margin-top: 30px;
+}
+
+
+#login_btn {
+  left: 70%;
+}
+
+#signup_btn {
+  left: 18%;
+  margin-top: 50px;
+}
+
+/** END: Non Openmrs CSS **/
+div.omrs-input-group {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.0625rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+  outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 147.6%;
+  color: var(--omrs-color-ink-medium-contrast);
+  transition: top 0.2s;
+  color: #c6cedd;
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+  font-size: 0.9375rem;
+  color: var(--omrs-color-ink-medium-contrast);
+  letter-spacing: 0.0275rem;
+  margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+  background: var(--omrs-color-interaction-minus-two);
+  border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+  top: 0;
+  font-size: 11px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8495b7;
+}
+
+.login-a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+.input {
+  position: relative;
+}
+
+.input-style {
+  position: absolute;
+  right: 30;
+  top: 18;
+}
+
+#forget {
+  text-decoration: none;
+  margin-left: 120px;
+  color: #a7b3cb;
+}
+
+.omrs-input-group .prefix.active {
+  color: rgb(48, 26, 26);
+}
+
+/* footer section starts*/
+footer {
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  bottom: 30;
+  position: absolute;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* footer section ends*/
+
+/*Responsive and media queries*/
+
+@media only screen and (max-width: 918px) {
+  .box {
+    width: 90%;
+    top: 43%;
+  }
+
+  .main {
+    width: 85%;
+  }
+
+  #loginform {
+    width: 70%;
+  }
+
+  .header-part {
+    justify-content: space-between;
+  }
+
+  .header-part img {
+    margin-left: 0 !important;
+  }
+
+  .omrs-input-group,
+  .omrs-input-group .omrs-input-underlined,
+  .omrs-input-group .omrs-input-underlined input {
+    width: 100% !important;
+  }
+
+  .main,
+  #loginform,
+  .signupform,
+  #login_msg,
+  #signup_msg {
+    left: 50% !important;
+  }
+
+  .button-hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #forget {
+    margin-left: 0;
+  }
+
+  .signupform {
+    width: 66%;
+  }
+
+  #login_btn {
+    left: 74%;
+  }
+
+  #signup_btn {
+    left: 27%;
+  }
+
+  #signup_btn,
+  #login_btn {
+    transform: translateX(-50%);
+    margin-top: 190px;
+    color: #49abfe;
+  }
+}

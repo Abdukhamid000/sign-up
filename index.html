@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./style.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3c7a95f37c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jquery-1.10.2.min.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="main"></div>
+      <div id="loginform">
+        <div class="header-part">
+          <h1 class="header-part-h1">Login</h1>
+          <img
+            src="./img/logo.png"
+            alt="Logo "
+            style="height: 28px; margin-left: 200px"
+          />
+        </div>
+        <div class="hr-1"></div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input required type="text" />
+            <span class="omrs-input-label">Name</span>
+            <img src="./img/icon-1.png" alt="" class="input-style" />
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input required type="password" />
+            <span class="omrs-input-label">Password</span>
+            <img src="./img/icon-2.png" alt="" class="input-style" />
+          </label>
+        </div>
+        <div class="button-hold">
+          <button><a href="#" class="login-a">login</a></button>
+          <a href="#" id="forget">Forget?</a>
+        </div>
+      </div>
+
+      <div class="signupform">
+        <h1 class="header-part-h1">Sign up</h1>
+        <div class="hr"></div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input required type="text" />
+            <span class="omrs-input-label">Full name</span>
+            <img src="./img/icon-1.png" alt="" class="input-style" />
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input required type="text" />
+            <span class="omrs-input-label">Email</span>
+            <img src="./img/icon-2.png" alt="" class="input-style" />
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input required />
+            <span class="omrs-input-label">Password</span>
+            <img src="./img/icon-3.png" alt="" class="input-style" />
+          </label>
+        </div>
+        <button><a href="#" class="login-a">Sign Up</a></button>
+      </div>
+
+      <div id="login_msg">
+        <h2>Have an account?</h2>
+        <div class="hr"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div id="signup_msg">
+        <h1>Don't have an account?</h1>
+        <div class="hr"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div>
+        <button id="login_btn">LOGIN</button>
+      </div>
+      <div>
+        <button id="signup_btn">SIGN UP</button>
+      </div>
+    </div>
+  </body>
+</html>
